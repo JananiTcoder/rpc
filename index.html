@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock, Paper, Scissors for ACM club 2025</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🐾 Rock, Paper, Scissors 2025 ACM club 🐾</h1>
+
+    <div class="score-board">
+      <p>Player: <span id="playerScore">0</span></p>
+      <p>Computer: <span id="computerScore">0</span></p>
+      <p>Round: <span id="round">0</span>/5</p>
+    </div>
+
+    <div class="choices" id="choicesBox">
+      <div class="user">
+        <h3>You</h3>
+        <div class="hand-row">
+          <span class="emoji" onclick="playRound('rock')">✊</span>
+          <span class="emoji" onclick="playRound('paper')">✋</span>
+          <span class="emoji" onclick="playRound('scissors')">✌️</span>
+        </div>
+      </div>
+
+      <div class="computer">
+        <h3 id="computerChoice">Computer 🐱</h3>
+      </div>
+    </div>
+
+    <div class="winner-box" id="winnerBox" style="display: none;"></div>
+
+    <div class="result">
+      <p id="message">Make your move!</p>
+      <button onclick="resetGame()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
